@@ -1,12 +1,12 @@
-export {createTodo, createProject};
+export {createTodo, createStatus};
 
-function createTodo(title,description,duedate,priority,project){
+function createTodo(title,description,duedate,priority,status){
     return {
         title,
         description,
         duedate,
         priority,
-        project,
+        status,
         isDone: function(boolean){
             if (boolean){
                 this.done = true;
@@ -26,14 +26,14 @@ function createTodo(title,description,duedate,priority,project){
         changeTitle: function(title){
             this.title = title;
         },
-        changeProject: function(project){
-            this.project = project;
+        changeStatus: function(status){
+            this.status = status;
         },
     }
 };
 
 
-function createProject(title){
+function createStatus(title){
     return {
         title,
         todos: [],

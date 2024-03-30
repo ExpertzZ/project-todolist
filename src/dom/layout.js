@@ -41,20 +41,20 @@ const layout = function () {
     itemCount.textContent = "0 items";
     summary.appendChild(itemCount);
 
-    const selectCompletion = document.createElement("select"); // Fix: Change ".select" to "select"
-    summary.appendChild(selectCompletion);
+    const selectStatus = document.createElement("select"); // Fix: Change ".select" to "select"
+    summary.appendChild(selectStatus);
 
     const all = document.createElement("option");
     all.textContent = "All";
-    selectCompletion.appendChild(all);
+    selectStatus.appendChild(all);
 
     const active = document.createElement("option");
     active.textContent = "Active";
-    selectCompletion.appendChild(active);
+    selectStatus.appendChild(active);
 
     const completed = document.createElement("option");
     completed.textContent = "Completed";
-    selectCompletion.appendChild(completed);
+    selectStatus.appendChild(completed);
 
     const clearButton = document.createElement("button");
     clearButton.textContent = "Clear Completed";
