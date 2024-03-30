@@ -1,0 +1,100 @@
+header{
+    width: 100vw;
+    
+    min-height: 18.8rem;
+    padding-bottom: 9.4rem;
+    align-items: center;
+    background: url('../images/bg-desktop-light.jpg') no-repeat;
+    background-size: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content:center;
+
+}
+
+h1{
+    color: white
+}
+
+main{   
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr; /* Updated to have one column */
+    
+}
+
+.create-todo{
+    max-width: 33.7rem;
+    min-width: 33.7rem;
+    background-color: white;
+    min-height: 4rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;    
+    border: 2px solid #eee;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+    position: sticky; /* Keeps the element fixed within its container */
+    top: 0; /* Stick to the top of the container */
+    z-index: 1; /* Ensure it's above other content */
+
+}
+
+
+.circle{
+    background-image: url('../images/border.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem;
+
+}
+
+
+
+input{
+    width: 80%;
+    height: 50%;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.summary{
+    max-width: 33.7rem;
+    min-width: 33.7rem;
+    background-color: white;
+    max-height: 4rem;
+    border-radius: 0.5rem;
+ 
+    border: 2px solid #eee;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items:baseline;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0;
+}
+
+.todo{
+    max-width: 33.7rem;
+    min-width: 33.7rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    
+    border: 2px solid #eee;
+    margin-bottom: 0;
+    max-height: 4rem;
+    min-height: 4rem;
+
+}
+
+
+
+
+

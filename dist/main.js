@@ -1,1 +1,1 @@
-console.log("Hello World!");
+(()=>{"use strict";var t={title:"Project 1",todos:[],addTodo:function(t){this.todos.push(t)}},i={title:"Title",description:"Description",duedate:"2021-12-12",priority:"High",project:"Project 1",isDone:function(t){this.done=!!t},changePriority:function(t){this.priority=t},changeDueDate:function(t){this.duedate=t},changeDescription:function(t){this.description=t},changeTitle:function(t){this.title=t},changeProject:function(t){this.project=t}};i.changeDescription("fhasdhfa"),i.isDone(!0),t.addTodo(i),console.log(t.todos[0])})();
