@@ -60,18 +60,17 @@ const layout = function () {
     clearButton.textContent = "Clear Completed";
     summary.appendChild(clearButton);
 
-   
-
-    
-
+    addTodo(main);
+    addTodo(main);
+    addTodo(main);
+    addTodo(main);
 
 }
     
-const addTodo = function () {
-
+const addTodo = function (main) {
     const todo = document.createElement("div");
     todo.classList.add("todo");
     
-    main.appendChild(todo);
-    
+    const summary = main.querySelector('.summary');
+    main.insertBefore(todo, summary);
 }

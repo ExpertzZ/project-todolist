@@ -19,4 +19,3 @@ console.log(project.todos[0]);
 */
 
 layout();
-addTodo();
