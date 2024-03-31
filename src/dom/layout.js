@@ -60,17 +60,28 @@ const layout = function () {
     clearButton.textContent = "Clear Completed";
     summary.appendChild(clearButton);
 
-    addTodo(main);
-    addTodo(main);
-    addTodo(main);
-    addTodo(main);
+    addTodo(main, {title: "Train Legs ^^"});
+    
 
 }
     
-const addTodo = function (main) {
+const addTodo = function (main, todoObject) {
     const todo = document.createElement("div");
     todo.classList.add("todo");
+
+    const circle = document.createElement("div");
+    circle.classList.add("circle");
+
+    const title = document.createElement("div");
+    title.classList.add("title");
+    title.textContent = todoObject.title;
+
+    todo.appendChild(circle);
+    todo.appendChild(title);
     
     const summary = main.querySelector('.summary');
     main.insertBefore(todo, summary);
+
+    
+
 }

@@ -1,21 +1,14 @@
-import { createProject, createTodo } from "./functions/todo";
+import { createTodo , createStatus } from "./functions/todo";
 import { addTodo, layout } from "./dom/layout";
+import { completeTodo, inputFieldCreateTodo } from "./dom/addTodo";
 import './styles/normalize.css';
+import { add } from "date-fns";
 
-
-/** 
-const project = createProject("Project 1");
-
-const todo = createTodo("Title", "Description", "2021-12-12", "High", "Project 1");
-todo.changeDescription("fhasdhfa");
-todo.isDone(true)
-
-project.addTodo(todo);
-
-
-
-console.log(project.todos[0]);
-
-*/
 
 layout();
+
+inputFieldCreateTodo(document.querySelector("input"));
+completeTodo(document.querySelector(".circle"));
+
+
+

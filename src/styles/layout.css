@@ -1,6 +1,20 @@
+@font-face {
+    font-family: 'Zaloga';
+    src: url('../fonts/Zaloga.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Duck Come';
+    src: url(../fonts/Duck\ Come.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+  
+    
     header{
         width: 100vw;
-        
         min-height: 18.8rem;
         padding-bottom: 9.4rem;
         align-items: center;
@@ -96,6 +110,13 @@
         border: 2px solid #eee;
         border-radius: 0.5rem;  
 
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        align-items: center;
+    }
+
+    .title{
+        font-family: 'Duck Come';
     }
 
 
